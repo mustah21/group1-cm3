@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
-  const username = useField("email");
+  const username = useField("text");
   const password = useField("password");
 
   const { login, error } = useLogin("/api/users/login");

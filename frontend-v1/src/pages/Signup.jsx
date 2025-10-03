@@ -42,7 +42,7 @@ const Signup = () => {
         <div className="create">
             <h2>Sign Up</h2>
             <form onSubmit={handleFormSubmit}>
-                <label>:</label>
+                <label>Profile picture:</label>
                 <input {...profile_picture} />
                 <label>Name:</label>
                 <input {...name} />

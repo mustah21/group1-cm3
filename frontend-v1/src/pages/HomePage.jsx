@@ -1,9 +1,11 @@
 import JobListings from "../components/JobListings";
 
+
 const Home = () => {
+
   return (
     <div className="home">
-      <JobListings  />
+      <JobListings />
     </div>
   );
 };
