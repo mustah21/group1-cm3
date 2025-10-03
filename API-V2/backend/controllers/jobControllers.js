@@ -17,16 +17,11 @@ const getAllJobs = async (req, res) => {
 const createJob = async (req, res) => {
 
   try {
-    const user_id = req.user._id;
-    const newJob = new Job({
-      ...req.body,
-      user_id,
-    });
-    await newJob.save();
+    const newJob = await Job.create({...req.body});
     res.status(201).json(newJob);
   } catch (error) {
     console.error("Error creating job:", error);
-    res.status(500).json({ error: "Server Error" });
+    res.status(400).json({ error: "Failed to create job"});
   }
 };
 
