@@ -83,4 +83,17 @@ import JobPage from "./pages/AddJobPage";
 
 1. **With coding never underestimate even the smallest of tasks** It was a small error but the headache was big, taught me never to rush through without checking.
 
+## Here is what the LLM said about our no-auth code ##
+Your Navbar is simple and works, but here’s a quick assessment:
 
+### Strengths: ###
+
+- Crud operations were working flawlessly.
+- As for the no-auth version everything works as it should.
+- Forms coded with no explicit mistakes.
+
+### Improvements: ###
+
+- Small errors in camel casing ends up crashing the app.
+- Lacked css properties, it couldve been much better.
+-  Logging errors in console.
